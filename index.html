@@ -10,14 +10,13 @@
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
-    <script src="js/app.js" ></script>
 <!--HEADER -->
 <header>
 <!--Boton tableros-->
   <div class="button-header">
     <a href="#">
       <span> <i class="fab fa-trello"></i> </span>
-      <span> <strong>Tableros</strong> </span>
+      <span> <strong>Boards</strong> </span>
     </a>
   </div>
 <!--Input-->
@@ -39,7 +38,7 @@
 </header>
 <!--Navitagor bar -->
 <nav>
-  <a href="#"> <span class="button-title">Tablero - Reto-de-Codigo</span> </a>
+  <a href="#"> <span class="button-title">Coding Challenge </span> </a>
   <div class="starIcon"> <i class="far fa-star"></i></div>
   <div class="linedividers">
     <span>|</span>
@@ -47,7 +46,7 @@
   <a href="#"> <span>Personal</span> </a>
   <div class="Privacity-Container">
     <i class="fa fa-lock" aria-hidden="true"></i>
-    <span>Privado</span>
+    <span>Private</span>
   </div>
   <div class="linedividers">
     <span>|</span>
@@ -58,23 +57,23 @@
   </div>
   <div class="Show-Menu">
     <span><i class="fas fa-ellipsis-h"></i>
-    <a href="#">Mostrar menú</a>
+    <a href="#">Shown Menu</a>
 </span>
   </div>
   </div>
 </nav>
 <main>
-  <div class="InputTaskCont">
-    <a href="#" id="SpanFirstContainer">
-      <span >Añadir lista</span>
-    </a>
-    <div class="Inputtask-HiddenContainer">
-      <input type="textarea" name="" value="" placeholder="Añadir Lista">
-    </div>
-    <!-- <button type="submit" name="button" >Guardar</button> -->
-    <!-- <textarea name="name" rows="8" cols="80" placeholder="A;adir una lista..."></textarea>
-     -->
-  </div>
+
+<div id="InputTaskCont">
+      <!-- <button id="addThisList"><span >Add a List</span></button> -->
+      <a href="#" id="addThisList"> <span> Add list ... </span> </a>
+      <div id="ListContent">  </div>
+</div>
+
 </main>
+<!-- Link of JS in Html-->
+<script type="text/javascript" src="./js/app.js" ></script>
+
   </body>
+
 </html>

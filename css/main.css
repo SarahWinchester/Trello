@@ -14,7 +14,7 @@ header{
   color: #0079BF;
   width: 80px;
   position: relative;
-  height: 5vh
+  height: 3.5vh
 }
 
 .header-icon> ul> li{
@@ -27,5 +27,5 @@ nav>*{
 }
 div .User-Icon {
   display: inline-block;
-  
+
 }
