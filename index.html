@@ -33,21 +33,24 @@
       <li> <i class="fas fa-plus" aria-hidden="true"></i> </li>
       <li><i class="fa fas fa-info-circle" aria-hidden="true"></i></li>
       <li><i class="fa fa-bell" aria-hidden="true"></i></li>
-      <li> <div class="User-Initials">SR</div> </li>
+      <li> <div id="User-Initials">SR</div> </li>
     </ul>
   </div>
 </header>
 <!--Navitagor bar -->
 <nav>
-  <a href="#"> <span class="button-title">Coding Challenge </span> </a>
+  <a href="#" style="text-decoration:none"> <span class="button-title">Coding Challenge </span> </a>
   <div class="starIcon"> <i class="far fa-star"></i></div>
   <div class="linedividers">
     <span>|</span>
   </div>
-  <a href="#"> <span>Personal</span> </a>
-  <div class="Privacity-Container">
-    <i class="fa fa-lock" aria-hidden="true"></i>
-    <span>Private</span>
+  <a href="#" > <span id="PersonalId">Personal</span> </a>
+  <div class="linedividers">
+    <span>|</span>
+  </div>
+  <div id="Privacity-Container">
+    <i class="fa fa-lock lockIcon" aria-hidden="true"></i>
+    <span class="lockIcon">Private</span>
   </div>
   <div class="linedividers">
     <span>|</span>
@@ -57,8 +60,8 @@
     <span><i class="fas fa-user-plus"></i></span>
   </div>
   <div class="Show-Menu">
-    <span><i class="fas fa-ellipsis-h"></i>
-    <a href="#">Shown Menu</a>
+    <span><i class="fas fa-ellipsis-h Show-Menu"></i>
+    <a href="#" class="Show-Menu">Shown Menu</a>
 </span>
   </div>
   </div>
@@ -67,7 +70,7 @@
 
 <div id="InputTaskCont">
 
-      <a href="#" id="addThisList"> <span> Add list ... </span> </a>
+      <a href="#" id="addThisList" class="addThisListStyle" style="text-decoration:none"> <span class="addThisListStyle"> Add list ... </span> </a>
       <div id="ListContent">  </div>
 </div>
 

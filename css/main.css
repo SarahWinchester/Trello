@@ -1,6 +1,5 @@
 body{
   box-sizing: border-box;
-  display: block;
   background:#0079BF;
   margin: 0;
   font-family: 'Lato', sans-serif;
@@ -23,6 +22,7 @@ header{
   margin-left: 6px;
   margin-right: 8px;
   border-radius: 5%;
+  opacity: 0.8;
 }
 div a span>* {
   color: white;
@@ -38,17 +38,30 @@ div a span:last-child{
   color: #0079BF;
   width: 80px;
   margin-top: 5px;
-  align-items: center;
-
-
+  position: relative;
+  left: 400%;
   height: 25px;
+  opacity: 0.5;
 }
 
-.header-icon> ul> li{
+.header-icon> ul> li {
   display: inline-block;
   position: relative;
-  left: 1000px;
-  text-align: left;
+  left: 800px;
+  opacity: 0.8;
+  background-color: #3385B5;
+  padding: 5px;
+  padding: 5px;
+  margin-left: 2px;
+  margin-right: 6px;
+  border-radius: 5%;
+
+}
+.header-icon ul li div{
+  background-color: #CDD2D4;
+  border-radius: 50%;
+  padding: 5px;
+
 }
 #InputHeaderSearch{
   background-color: #3385B5;
@@ -57,11 +70,96 @@ div a span:last-child{
 
 }
 /*--Navitagor*/
-nav>*{
+nav{
+  display: inline-block;
+}
+.button-title{
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right:  10px;
+  padding-left: 20px;
+  opacity: 0.8;
+}
+.starIcon{
   display: inline-block;
   color: white;
+  opacity: 0.8;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left:10px;
 }
-div .User-Icon {
+.linedividers{
+  color: white;
   display: inline-block;
+  opacity: 0.8;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 15px;
+}
+#PersonalId{
+  color: white;
+  display:inline-block;
+  margin-left: 15px;
+  opacity: 0.8;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#Privacity-Container{
+  display: inline;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+.lockIcon{
+  display: inline-block;
+  color: white;
+  opacity: 0.8;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.User-Icon{
+  display: inline-block;
+  color: black;
+  background-color: #CDD2D4;
+  border-radius: 50%;
+  font-size: 1em;
+
+}
+.Show-Menu{
+  display: inline-block;
+  color: white;
+  opacity: 0.9;
+  font-size: 1.1em;
+  font-weight: bold;
+  position: relative;
+  right: -53%;
+}
+.addThisListStyle{
+  color: white;
+  background-color: #0067A3;
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right:20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+.addThisListStyle:hover{
+  background-color: #005485;
+}
+#SecondBoxContainerId{
+  border: 1px solid #CDD2D4;
+  margin: 30px;
+  display: inline-block;
+  background-color: #CDD2D4
 
 }
