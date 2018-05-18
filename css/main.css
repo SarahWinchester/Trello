@@ -123,11 +123,20 @@ nav{
 }
 .User-Icon{
   display: inline-block;
+}
+.User-Icon :first-child{
+  display: inline-block;
   color: black;
+  padding: .5em;
   background-color: #CDD2D4;
   border-radius: 50%;
-  font-size: 1em;
+  margin-right: 7px;
+  font-size: 1.2em;
+  opacity: 0.8;
 
+}
+.User-Icon :last-child{
+  color: white;
 }
 .Show-Menu{
   display: inline-block;
@@ -136,7 +145,7 @@ nav{
   font-size: 1.1em;
   font-weight: bold;
   position: relative;
-  right: -53%;
+  right: -48%;
 }
 .addThisListStyle{
   color: white;
@@ -156,10 +165,23 @@ nav{
 .addThisListStyle:hover{
   background-color: #005485;
 }
+#addThisList span{
+  text-align: left;
+
+}
+}
 #SecondBoxContainerId{
   border: 1px solid #CDD2D4;
   margin: 30px;
+  margin-left: 60px;
   display: inline-block;
   background-color: #CDD2D4
-
+}
+#inputNameListId{
+  background-color: #CDD2D4;
+  font-size: 1.2em;
+  margin-left: 5px;
+  background-color: #CDD2D4;
+  border-radius: 5%;
+  padding: 10px;
 }
