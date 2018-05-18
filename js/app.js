@@ -1,7 +1,6 @@
 //Adding the element from HTML
 var buttonTask = document.getElementById("addThisList");
 var listAndTaskContents = document.getElementById("InputTaskCont");
-
 //Creating function - create elements
 buttonTask.addEventListener('click', function(){
 //Erasing button who calls the function
@@ -23,15 +22,49 @@ buttonTask.addEventListener('click', function(){
   var CancelButtonNameListText= document.createTextNode("X");
     CancelButtonNameList.id = "CancelButtonNameListId";
     CancelButtonNameList.appendChild(CancelButtonNameListText);
+//Creating the box who will contain input and buttons
+  var SecondBoxContainer = document.createElement("div")
+    SecondBoxContainer.id = "SecondBoxContainerId"
 //Creating Span to contain buttons
   var buttonsAddListContainer = document.createElement("div")
 //Adding everything to firstDivContainer
-  principalTaskDiv.appendChild(inputNameList)
-    //this will add buttons to an a span
+  principalTaskDiv.appendChild(SecondBoxContainer);
+  //this will add the input to the secondContainer
+  SecondBoxContainer.appendChild(inputNameList);
+  //this will add buttons to an a span
   buttonsAddListContainer.appendChild(saveButtonNameList);
   buttonsAddListContainer.appendChild(CancelButtonNameList);
-//Adding button Container to firstDivContainer
-  principalTaskDiv.appendChild(buttonsAddListContainer);
-  //adding to the body
+  //Adding buttonBox to secondContainer
+  SecondBoxContainer.appendChild(buttonsAddListContainer);
+//Adding to the body
   document.body.appendChild(principalTaskDiv);
+
+//Creating Functionality for saveButton
+saveButtonNameList.addEventListener('click', function(){
+  //Takes the text from the input
+  var titleElementNameTask = document.getElementById('inputNameListId').value;
+   titleElementNameTask.id = "divTitleValue";
+  //Creates a Div to use it as a title
+  var titlePrincipalBox = document.createElement("h4");
+  var titlePrincipalBoxText = document.createTextNode(titleElementNameTask);
+  titlePrincipalBox.appendChild(titlePrincipalBoxText);
+  principalTaskDiv.appendChild(titlePrincipalBox);
+//Earsing the inputbox
+  principalTaskDiv.removeChild(SecondBoxContainer);
+//Creating the AddTaskBox
+  var addTaskDiv = document.createElement("a");
+  var addTaskDivText = document.createTextNode("Add Task");
+   addTaskDiv.appendChild(addTaskDivText);
+   principalTaskDiv.appendChild(addTaskDiv);
+//function with the textArea
+addTaskDiv.addEventListener('click', function(){
+  principalTaskDiv.removeChild(addTaskDiv);
+//creating textArea  
+
+
+});
+
+});
+
+
 });
