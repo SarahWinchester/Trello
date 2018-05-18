@@ -3,6 +3,7 @@ var buttonTask = document.getElementById("addThisList");
 var listAndTaskContents = document.getElementById("InputTaskCont");
 //Creating function - create elements
   buttonTask.addEventListener('click', function() {
+    buttonTask.focus();
     //Erasing button who calls the function
     listAndTaskContents.removeChild(buttonTask);
     //Creating first box content and the biggest one
